@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 979.0, 206.0, 1262.0, 706.0 ],
+		"rect" : [ 563.0, 287.0, 1262.0, 706.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -2747,7 +2747,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 577.0, 292.0, 1098.0, 508.0 ],
+						"rect" : [ 646.0, 407.0, 1098.0, 508.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2774,7 +2774,34 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 281.0, 340.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~",
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_mmin" : -70.0,
+											"parameter_mmax" : 6.0,
+											"parameter_initial" : [ 0.0 ],
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "message",
@@ -2882,7 +2909,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 703.0, 175.0, 1079.0, 763.0 ],
+										"rect" : [ 95.0, 132.0, 1079.0, 763.0 ],
 										"bglocked" : 1,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2910,6 +2937,188 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-20",
+													"maxclass" : "live.gain~",
+													"numinlets" : 2,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "", "float", "list" ],
+													"parameter_enable" : 1,
+													"patching_rect" : [ 499.0, 86.0, 48.0, 136.0 ],
+													"saved_attribute_attributes" : 													{
+														"valueof" : 														{
+															"parameter_longname" : "live.gain~[30]",
+															"parameter_shortname" : "live.gain~[30]",
+															"parameter_type" : 0,
+															"parameter_mmin" : -70.0,
+															"parameter_mmax" : 6.0,
+															"parameter_initial" : [ 0.0 ],
+															"parameter_unitstyle" : 4
+														}
+
+													}
+,
+													"varname" : "live.gain~[8]"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"data" : 													{
+														"clips" : [ 															{
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/space drums/looperman-l-0291301-0097251-djreaperspirit-silent-hill-forest (1).wav",
+																"filekind" : "audiofile",
+																"loop" : 0,
+																"content_state" : 																{
+																	"originallengthms" : [ 0.0 ],
+																	"slurtime" : [ 0.0 ],
+																	"followglobaltempo" : [ 0 ],
+																	"speed" : [ 1.0 ],
+																	"formant" : [ 1.0 ],
+																	"basictuning" : [ 440 ],
+																	"formantcorrection" : [ 0 ],
+																	"pitchcorrection" : [ 0 ],
+																	"quality" : [ "basic" ],
+																	"timestretch" : [ 0 ],
+																	"originallength" : [ 0.0, "ticks" ],
+																	"mode" : [ "basic" ],
+																	"pitchshift" : [ 1.0 ],
+																	"play" : [ 0 ],
+																	"originaltempo" : [ 120.0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"id" : "obj-17",
+													"maxclass" : "playlist~",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+													"patching_rect" : [ 316.0, 470.0, 150.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"data" : 													{
+														"clips" : [ 															{
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/space drums/looperman-l-0549180-0050088-haydenbutcher-shivering-snare.wav",
+																"filekind" : "audiofile",
+																"loop" : 0,
+																"content_state" : 																{
+																	"originallengthms" : [ 0.0 ],
+																	"slurtime" : [ 0.0 ],
+																	"followglobaltempo" : [ 0 ],
+																	"speed" : [ 1.0 ],
+																	"formant" : [ 1.0 ],
+																	"basictuning" : [ 440 ],
+																	"formantcorrection" : [ 0 ],
+																	"pitchcorrection" : [ 0 ],
+																	"quality" : [ "basic" ],
+																	"timestretch" : [ 0 ],
+																	"originallength" : [ 0.0, "ticks" ],
+																	"mode" : [ "basic" ],
+																	"pitchshift" : [ 1.0 ],
+																	"play" : [ 0 ],
+																	"originaltempo" : [ 120.0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"id" : "obj-13",
+													"maxclass" : "playlist~",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+													"patching_rect" : [ 64.5, 466.0, 150.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"data" : 													{
+														"clips" : [ 															{
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/space drums/looperman-l-1588764-0102038-amirmofrat-darkest-night-drum-loop-1.wav",
+																"filekind" : "audiofile",
+																"loop" : 0,
+																"content_state" : 																{
+																	"originallengthms" : [ 0.0 ],
+																	"slurtime" : [ 0.0 ],
+																	"followglobaltempo" : [ 0 ],
+																	"speed" : [ 1.0 ],
+																	"formant" : [ 1.0 ],
+																	"basictuning" : [ 440 ],
+																	"formantcorrection" : [ 0 ],
+																	"pitchcorrection" : [ 0 ],
+																	"quality" : [ "basic" ],
+																	"timestretch" : [ 0 ],
+																	"originallength" : [ 0.0, "ticks" ],
+																	"mode" : [ "basic" ],
+																	"pitchshift" : [ 1.0 ],
+																	"play" : [ 0 ],
+																	"originaltempo" : [ 120.0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"id" : "obj-11",
+													"maxclass" : "playlist~",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+													"patching_rect" : [ 316.0, 181.0, 150.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"data" : 													{
+														"clips" : [ 															{
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/space drums/looperman-l-0203623-0021193-mhyst-ambient-swing.wav",
+																"filekind" : "audiofile",
+																"loop" : 0,
+																"content_state" : 																{
+																	"originallengthms" : [ 0.0 ],
+																	"slurtime" : [ 0.0 ],
+																	"followglobaltempo" : [ 0 ],
+																	"speed" : [ 1.0 ],
+																	"formant" : [ 1.0 ],
+																	"basictuning" : [ 440 ],
+																	"formantcorrection" : [ 0 ],
+																	"pitchcorrection" : [ 0 ],
+																	"quality" : [ "basic" ],
+																	"timestretch" : [ 0 ],
+																	"originallength" : [ 0.0, "ticks" ],
+																	"mode" : [ "basic" ],
+																	"pitchshift" : [ 1.0 ],
+																	"play" : [ 0 ],
+																	"originaltempo" : [ 120.0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"id" : "obj-7",
+													"maxclass" : "playlist~",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+													"patching_rect" : [ 64.5, 181.0, 150.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
@@ -2991,45 +3200,6 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Movement-48.wav",
-																"filekind" : "audiofile",
-																"loop" : 0,
-																"content_state" : 																{
-																	"originallengthms" : [ 0.0 ],
-																	"slurtime" : [ 0.0 ],
-																	"followglobaltempo" : [ 0 ],
-																	"speed" : [ 1.0 ],
-																	"formant" : [ 1.0 ],
-																	"basictuning" : [ 440 ],
-																	"formantcorrection" : [ 0 ],
-																	"pitchcorrection" : [ 0 ],
-																	"quality" : [ "basic" ],
-																	"timestretch" : [ 0 ],
-																	"originallength" : [ 0.0, "ticks" ],
-																	"mode" : [ "basic" ],
-																	"pitchshift" : [ 1.0 ],
-																	"play" : [ 0 ],
-																	"originaltempo" : [ 120.0 ]
-																}
-
-															}
- ]
-													}
-,
-													"id" : "obj-31",
-													"maxclass" : "playlist~",
-													"numinlets" : 1,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 316.0, 466.0, 150.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"data" : 													{
-														"clips" : [ 															{
 																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Movement-37.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
@@ -3100,123 +3270,6 @@
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 													"patching_rect" : [ 581.5, 186.0, 150.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"data" : 													{
-														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Oneshot-14.wav",
-																"filekind" : "audiofile",
-																"loop" : 0,
-																"content_state" : 																{
-																	"originallengthms" : [ 0.0 ],
-																	"slurtime" : [ 0.0 ],
-																	"followglobaltempo" : [ 0 ],
-																	"speed" : [ 1.0 ],
-																	"formant" : [ 1.0 ],
-																	"basictuning" : [ 440 ],
-																	"formantcorrection" : [ 0 ],
-																	"pitchcorrection" : [ 0 ],
-																	"quality" : [ "basic" ],
-																	"timestretch" : [ 0 ],
-																	"originallength" : [ 0.0, "ticks" ],
-																	"mode" : [ "basic" ],
-																	"pitchshift" : [ 1.0 ],
-																	"play" : [ 0 ],
-																	"originaltempo" : [ 120.0 ]
-																}
-
-															}
- ]
-													}
-,
-													"id" : "obj-16",
-													"maxclass" : "playlist~",
-													"numinlets" : 1,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 316.0, 181.0, 150.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"data" : 													{
-														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Oneshot-01.wav",
-																"filekind" : "audiofile",
-																"loop" : 0,
-																"content_state" : 																{
-																	"originallengthms" : [ 0.0 ],
-																	"slurtime" : [ 0.0 ],
-																	"followglobaltempo" : [ 0 ],
-																	"speed" : [ 1.0 ],
-																	"formant" : [ 1.0 ],
-																	"basictuning" : [ 440 ],
-																	"formantcorrection" : [ 0 ],
-																	"pitchcorrection" : [ 0 ],
-																	"quality" : [ "basic" ],
-																	"timestretch" : [ 0 ],
-																	"originallength" : [ 0.0, "ticks" ],
-																	"mode" : [ "basic" ],
-																	"pitchshift" : [ 1.0 ],
-																	"play" : [ 0 ],
-																	"originaltempo" : [ 120.0 ]
-																}
-
-															}
- ]
-													}
-,
-													"id" : "obj-13",
-													"maxclass" : "playlist~",
-													"numinlets" : 1,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 61.0, 181.0, 150.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"data" : 													{
-														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/looperman-l-0111346-0033220-planetjazzbass-cavern.wav",
-																"filekind" : "audiofile",
-																"loop" : 0,
-																"content_state" : 																{
-																	"originallengthms" : [ 0.0 ],
-																	"slurtime" : [ 0.0 ],
-																	"followglobaltempo" : [ 0 ],
-																	"speed" : [ 1.0 ],
-																	"formant" : [ 1.0 ],
-																	"basictuning" : [ 440 ],
-																	"formantcorrection" : [ 0 ],
-																	"pitchcorrection" : [ 0 ],
-																	"quality" : [ "basic" ],
-																	"timestretch" : [ 0 ],
-																	"originallength" : [ 0.0, "ticks" ],
-																	"mode" : [ "basic" ],
-																	"pitchshift" : [ 1.0 ],
-																	"play" : [ 0 ],
-																	"originaltempo" : [ 120.0 ]
-																}
-
-															}
- ]
-													}
-,
-													"id" : "obj-10",
-													"maxclass" : "playlist~",
-													"numinlets" : 1,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 64.5, 470.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -4099,9 +4152,9 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 59.5, 143.0, 366.0, 22.0 ],
+																	"patching_rect" : [ 59.5, 143.0, 373.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 > 81 && $i1 <= 160 && $i2 > 121 && $i2 <= 240 then 1 else 0"
+																	"text" : "if $i1 > 161 && $i1 <= 320 && $i2 > 121 && $i2 <= 240 then 1 else 0"
 																}
 
 															}
@@ -4456,9 +4509,9 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 59.5, 143.0, 353.0, 22.0 ],
+																	"patching_rect" : [ 59.5, 143.0, 359.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 > 0 && $i1 <= 80 && $i2 > 121 && $i2 <= 240 then 1 else 0"
+																	"text" : "if $i1 > 0 && $i1 <= 160 && $i2 > 121 && $i2 <= 240 then 1 else 0"
 																}
 
 															}
@@ -5727,9 +5780,9 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 59.5, 143.0, 353.0, 22.0 ],
+																	"patching_rect" : [ 59.5, 143.0, 359.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 > 81 && $i1 <= 160 && $i2 > 0 && $i2 <= 120 then 1 else 0"
+																	"text" : "if $i1 > 161 && $i1 <= 320 && $i2 > 0 && $i2 <= 120 then 1 else 0"
 																}
 
 															}
@@ -6106,9 +6159,9 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 59.5, 143.0, 339.0, 22.0 ],
+																	"patching_rect" : [ 59.5, 143.0, 346.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 > 0 && $i1 <= 80 && $i2 > 0 && $i2 <= 120 then 1 else 0"
+																	"text" : "if $i1 > 0 && $i1 <= 160 && $i2 > 0 && $i2 <= 120 then 1 else 0"
 																}
 
 															}
@@ -6644,7 +6697,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 521.0, 83.0, 30.0, 30.0 ],
+													"patching_rect" : [ 558.0, 107.5, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -6836,15 +6889,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-109", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-10", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-100", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -6881,7 +6925,16 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-6", 0 ],
+													"destination" : [ "obj-23", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-11", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-109", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-13", 0 ]
@@ -6890,10 +6943,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-23", 0 ],
+													"destination" : [ "obj-107", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-16", 0 ]
+													"source" : [ "obj-17", 0 ]
 												}
 
 											}
@@ -6919,6 +6972,15 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-20", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -6928,10 +6990,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
+													"destination" : [ "obj-20", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 315.0, 79.5, 530.5, 79.5 ],
+													"midpoints" : [ 315.0, 95.5, 508.5, 95.5 ],
 													"source" : [ "obj-27", 0 ]
 												}
 
@@ -6947,15 +7009,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-107", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-31", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-101", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -6965,10 +7018,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
+													"destination" : [ "obj-20", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 435.5, 78.5, 530.5, 78.5 ],
+													"midpoints" : [ 435.5, 81.5, 508.5, 81.5 ],
 													"source" : [ "obj-35", 0 ]
 												}
 
@@ -6984,60 +7037,20 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
+													"destination" : [ "obj-20", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 553.5, 76.5, 530.5, 76.5 ],
-													"source" : [ "obj-44", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"midpoints" : [ 668.5, 74.5, 530.5, 74.5 ],
-													"source" : [ "obj-45", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"midpoints" : [ 668.5, 74.0, 530.5, 74.0 ],
-													"source" : [ "obj-46", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"midpoints" : [ 553.5, 79.0, 530.5, 79.0 ],
-													"source" : [ "obj-47", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"midpoints" : [ 435.5, 74.0, 530.5, 74.0 ],
+													"midpoints" : [ 435.5, 70.0, 508.5, 70.0 ],
 													"source" : [ "obj-48", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-3", 0 ],
+													"destination" : [ "obj-20", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 315.0, 78.0, 530.5, 78.0 ],
+													"midpoints" : [ 315.0, 101.0, 508.5, 101.0 ],
 													"source" : [ "obj-49", 0 ]
 												}
 
@@ -7071,10 +7084,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-13", 0 ],
+													"destination" : [ "obj-6", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-82", 0 ]
+													"source" : [ "obj-7", 0 ]
 												}
 
 											}
@@ -7089,7 +7102,16 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-16", 0 ],
+													"destination" : [ "obj-7", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-82", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-11", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-85", 0 ]
@@ -7188,19 +7210,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-31", 0 ],
+													"destination" : [ "obj-17", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-97", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-10", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-98", 0 ]
 												}
 
 											}
@@ -7210,6 +7223,15 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-98", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-98", 0 ]
 												}
 
 											}
@@ -7273,7 +7295,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 305.0, 185.0, 1079.0, 763.0 ],
+										"rect" : [ 649.0, 140.0, 1079.0, 763.0 ],
 										"bglocked" : 1,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -7302,35 +7324,9 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-32",
-													"maxclass" : "live.gain~",
-													"numinlets" : 2,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "", "float", "list" ],
-													"parameter_enable" : 1,
-													"patching_rect" : [ 457.5, 89.0, 48.0, 136.0 ],
-													"saved_attribute_attributes" : 													{
-														"valueof" : 														{
-															"parameter_longname" : "live.gain~[29]",
-															"parameter_shortname" : "live.gain~[29]",
-															"parameter_type" : 0,
-															"parameter_mmin" : -70.0,
-															"parameter_mmax" : 6.0,
-															"parameter_initial" : [ 0.0 ],
-															"parameter_unitstyle" : 4
-														}
-
-													}
-,
-													"varname" : "live.gain~[8]"
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-18.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/8.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7360,7 +7356,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 818.0, 477.0, 150.0, 30.0 ],
+													"patching_rect" : [ 818.0, 469.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -7369,7 +7365,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-16.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/7.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7394,12 +7390,12 @@
  ]
 													}
 ,
-													"id" : "obj-28",
+													"id" : "obj-29",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 587.5, 466.0, 150.0, 30.0 ],
+													"patching_rect" : [ 587.5, 469.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -7408,7 +7404,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-08.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/6.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7433,12 +7429,12 @@
  ]
 													}
 ,
-													"id" : "obj-22",
+													"id" : "obj-25",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 316.0, 477.0, 150.0, 30.0 ],
+													"patching_rect" : [ 316.0, 469.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -7447,7 +7443,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-04.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/5.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7472,12 +7468,12 @@
  ]
 													}
 ,
-													"id" : "obj-20",
+													"id" : "obj-21",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 64.5, 470.0, 150.0, 30.0 ],
+													"patching_rect" : [ 64.5, 469.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -7486,7 +7482,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-48.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/4.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7511,12 +7507,12 @@
  ]
 													}
 ,
-													"id" : "obj-16",
+													"id" : "obj-15",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 818.0, 188.0, 150.0, 30.0 ],
+													"patching_rect" : [ 819.0, 188.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -7525,7 +7521,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-42.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/3.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7550,7 +7546,7 @@
  ]
 													}
 ,
-													"id" : "obj-14",
+													"id" : "obj-13",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
@@ -7564,7 +7560,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-28.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/2.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7589,12 +7585,12 @@
  ]
 													}
 ,
-													"id" : "obj-12",
+													"id" : "obj-11",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 316.0, 192.0, 150.0, 30.0 ],
+													"patching_rect" : [ 316.0, 183.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -7603,7 +7599,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-05.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Documents/DM Things/sound-happening/samples/new melody samples/1.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -7633,8 +7629,34 @@
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 64.5, 192.0, 150.0, 30.0 ],
+													"patching_rect" : [ 64.5, 179.0, 150.0, 30.0 ],
 													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-32",
+													"maxclass" : "live.gain~",
+													"numinlets" : 2,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "", "float", "list" ],
+													"parameter_enable" : 1,
+													"patching_rect" : [ 457.5, 89.0, 48.0, 136.0 ],
+													"saved_attribute_attributes" : 													{
+														"valueof" : 														{
+															"parameter_longname" : "live.gain~[29]",
+															"parameter_shortname" : "live.gain~[29]",
+															"parameter_type" : 0,
+															"parameter_mmin" : -70.0,
+															"parameter_mmax" : 6.0,
+															"parameter_initial" : [ 0.0 ],
+															"parameter_unitstyle" : 4
+														}
+
+													}
+,
+													"varname" : "live.gain~[8]"
 												}
 
 											}
@@ -7808,7 +7830,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -7819,9 +7841,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -8178,7 +8200,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -8189,9 +8211,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -8544,7 +8566,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -8555,9 +8577,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -8901,7 +8923,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -8912,9 +8934,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -9410,7 +9432,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -9421,9 +9443,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -9780,7 +9802,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -9791,9 +9813,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -10172,7 +10194,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -10183,9 +10205,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -10385,7 +10407,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 207.0, 172.0, 640.0, 480.0 ],
+														"rect" : [ 34.0, 79.0, 1852.0, 919.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -10551,7 +10573,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 54.0, 281.0, 50.0, 22.0 ],
 																	"style" : "",
-																	"text" : "yes"
+																	"text" : "0"
 																}
 
 															}
@@ -10562,9 +10584,9 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.5, 194.0, 147.0, 22.0 ],
+																	"patching_rect" : [ 116.5, 194.0, 135.0, 22.0 ],
 																	"style" : "",
-																	"text" : "if $i1 == 1 then 1 else yes"
+																	"text" : "if $i1 == 1 then 1 else 0"
 																}
 
 															}
@@ -11292,7 +11314,7 @@
 													"destination" : [ "obj-23", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-12", 0 ]
+													"source" : [ "obj-11", 0 ]
 												}
 
 											}
@@ -11301,7 +11323,7 @@
 													"destination" : [ "obj-69", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-14", 0 ]
+													"source" : [ "obj-13", 0 ]
 												}
 
 											}
@@ -11310,7 +11332,7 @@
 													"destination" : [ "obj-52", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-16", 0 ]
+													"source" : [ "obj-15", 0 ]
 												}
 
 											}
@@ -11339,16 +11361,7 @@
 													"destination" : [ "obj-109", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-20", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-107", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-22", 0 ]
+													"source" : [ "obj-21", 0 ]
 												}
 
 											}
@@ -11358,6 +11371,15 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-23", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-107", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-25", 0 ]
 												}
 
 											}
@@ -11376,7 +11398,7 @@
 													"destination" : [ "obj-103", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-28", 0 ]
+													"source" : [ "obj-29", 0 ]
 												}
 
 											}
@@ -11524,7 +11546,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-12", 0 ],
+													"destination" : [ "obj-11", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-85", 0 ]
@@ -11542,7 +11564,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-14", 0 ],
+													"destination" : [ "obj-13", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-88", 0 ]
@@ -11560,7 +11582,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-16", 0 ],
+													"destination" : [ "obj-15", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-91", 0 ]
@@ -11605,7 +11627,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-28", 0 ],
+													"destination" : [ "obj-29", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-96", 0 ]
@@ -11623,7 +11645,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-22", 0 ],
+													"destination" : [ "obj-25", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-97", 0 ]
@@ -11641,7 +11663,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-20", 0 ],
+													"destination" : [ "obj-21", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-98", 0 ]
@@ -11673,7 +11695,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 452.0, 350.0, 30.0, 30.0 ],
+									"patching_rect" : [ 477.0, 354.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -11695,7 +11717,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 167.0, 242.0, 1079.0, 763.0 ],
+										"rect" : [ 79.0, 99.0, 1079.0, 763.0 ],
 										"bglocked" : 1,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -11724,113 +11746,9 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-5",
-													"maxclass" : "live.gain~",
-													"numinlets" : 2,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "", "float", "list" ],
-													"parameter_enable" : 1,
-													"patching_rect" : [ 468.0, 86.0, 48.0, 136.0 ],
-													"saved_attribute_attributes" : 													{
-														"valueof" : 														{
-															"parameter_longname" : "live.gain~[28]",
-															"parameter_shortname" : "live.gain~[28]",
-															"parameter_type" : 0,
-															"parameter_mmin" : -70.0,
-															"parameter_mmax" : 6.0,
-															"parameter_initial" : [ 0.0 ],
-															"parameter_unitstyle" : 4
-														}
-
-													}
-,
-													"varname" : "live.gain~[8]"
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Movement-18.wav",
-																"filekind" : "audiofile",
-																"loop" : 0,
-																"content_state" : 																{
-																	"originallengthms" : [ 0.0 ],
-																	"slurtime" : [ 0.0 ],
-																	"followglobaltempo" : [ 0 ],
-																	"speed" : [ 1.0 ],
-																	"formant" : [ 1.0 ],
-																	"basictuning" : [ 440 ],
-																	"formantcorrection" : [ 0 ],
-																	"pitchcorrection" : [ 0 ],
-																	"quality" : [ "basic" ],
-																	"timestretch" : [ 0 ],
-																	"originallength" : [ 0.0, "ticks" ],
-																	"mode" : [ "basic" ],
-																	"pitchshift" : [ 1.0 ],
-																	"play" : [ 0 ],
-																	"originaltempo" : [ 120.0 ]
-																}
-
-															}
- ]
-													}
-,
-													"id" : "obj-36",
-													"maxclass" : "playlist~",
-													"numinlets" : 1,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 587.5, 470.0, 150.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"data" : 													{
-														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Oneshot-08.wav",
-																"filekind" : "audiofile",
-																"loop" : 0,
-																"content_state" : 																{
-																	"originallengthms" : [ 0.0 ],
-																	"slurtime" : [ 0.0 ],
-																	"followglobaltempo" : [ 0 ],
-																	"speed" : [ 1.0 ],
-																	"formant" : [ 1.0 ],
-																	"basictuning" : [ 440 ],
-																	"formantcorrection" : [ 0 ],
-																	"pitchcorrection" : [ 0 ],
-																	"quality" : [ "basic" ],
-																	"timestretch" : [ 0 ],
-																	"originallength" : [ 0.0, "ticks" ],
-																	"mode" : [ "basic" ],
-																	"pitchshift" : [ 1.0 ],
-																	"play" : [ 0 ],
-																	"originaltempo" : [ 120.0 ]
-																}
-
-															}
- ]
-													}
-,
-													"id" : "obj-33",
-													"maxclass" : "playlist~",
-													"numinlets" : 1,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 818.0, 466.0, 150.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"data" : 													{
-														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Movement-48.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-18.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -11860,7 +11778,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 316.0, 466.0, 150.0, 30.0 ],
+													"patching_rect" : [ 828.0, 474.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -11869,7 +11787,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Movement-37.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-16.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -11894,12 +11812,12 @@
  ]
 													}
 ,
-													"id" : "obj-28",
+													"id" : "obj-29",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 819.0, 181.0, 150.0, 30.0 ],
+													"patching_rect" : [ 587.5, 466.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -11908,7 +11826,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Movement-03.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-08.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -11933,7 +11851,124 @@
  ]
 													}
 ,
-													"id" : "obj-22",
+													"id" : "obj-25",
+													"maxclass" : "playlist~",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+													"patching_rect" : [ 316.0, 470.0, 150.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"data" : 													{
+														"clips" : [ 															{
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Oneshot-04.wav",
+																"filekind" : "audiofile",
+																"loop" : 0,
+																"content_state" : 																{
+																	"originallengthms" : [ 0.0 ],
+																	"slurtime" : [ 0.0 ],
+																	"followglobaltempo" : [ 0 ],
+																	"speed" : [ 1.0 ],
+																	"formant" : [ 1.0 ],
+																	"basictuning" : [ 440 ],
+																	"formantcorrection" : [ 0 ],
+																	"pitchcorrection" : [ 0 ],
+																	"quality" : [ "basic" ],
+																	"timestretch" : [ 0 ],
+																	"originallength" : [ 0.0, "ticks" ],
+																	"mode" : [ "basic" ],
+																	"pitchshift" : [ 1.0 ],
+																	"play" : [ 0 ],
+																	"originaltempo" : [ 120.0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"id" : "obj-21",
+													"maxclass" : "playlist~",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+													"patching_rect" : [ 64.5, 474.0, 150.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"data" : 													{
+														"clips" : [ 															{
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-48.wav",
+																"filekind" : "audiofile",
+																"loop" : 0,
+																"content_state" : 																{
+																	"originallengthms" : [ 0.0 ],
+																	"slurtime" : [ 0.0 ],
+																	"followglobaltempo" : [ 0 ],
+																	"speed" : [ 1.0 ],
+																	"formant" : [ 1.0 ],
+																	"basictuning" : [ 440 ],
+																	"formantcorrection" : [ 0 ],
+																	"pitchcorrection" : [ 0 ],
+																	"quality" : [ "basic" ],
+																	"timestretch" : [ 0 ],
+																	"originallength" : [ 0.0, "ticks" ],
+																	"mode" : [ "basic" ],
+																	"pitchshift" : [ 1.0 ],
+																	"play" : [ 0 ],
+																	"originaltempo" : [ 120.0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"id" : "obj-17",
+													"maxclass" : "playlist~",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+													"patching_rect" : [ 819.0, 186.0, 150.0, 30.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"data" : 													{
+														"clips" : [ 															{
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-42.wav",
+																"filekind" : "audiofile",
+																"loop" : 0,
+																"content_state" : 																{
+																	"originallengthms" : [ 0.0 ],
+																	"slurtime" : [ 0.0 ],
+																	"followglobaltempo" : [ 0 ],
+																	"speed" : [ 1.0 ],
+																	"formant" : [ 1.0 ],
+																	"basictuning" : [ 440 ],
+																	"formantcorrection" : [ 0 ],
+																	"pitchcorrection" : [ 0 ],
+																	"quality" : [ "basic" ],
+																	"timestretch" : [ 0 ],
+																	"originallength" : [ 0.0, "ticks" ],
+																	"mode" : [ "basic" ],
+																	"pitchshift" : [ 1.0 ],
+																	"play" : [ 0 ],
+																	"originaltempo" : [ 120.0 ]
+																}
+
+															}
+ ]
+													}
+,
+													"id" : "obj-15",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
@@ -11947,46 +11982,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Oneshot-14.wav",
-																"filekind" : "audiofile",
-																"loop" : 0,
-																"content_state" : 																{
-																	"originallengthms" : [ 0.0 ],
-																	"slurtime" : [ 0.0 ],
-																	"followglobaltempo" : [ 0 ],
-																	"speed" : [ 1.0 ],
-																	"formant" : [ 1.0 ],
-																	"basictuning" : [ 440 ],
-																	"formantcorrection" : [ 0 ],
-																	"pitchcorrection" : [ 0 ],
-																	"quality" : [ "basic" ],
-																	"timestretch" : [ 0 ],
-																	"originallength" : [ 0.0, "ticks" ],
-																	"mode" : [ "basic" ],
-																	"pitchshift" : [ 1.0 ],
-																	"play" : [ 0 ],
-																	"originaltempo" : [ 120.0 ]
-																}
-
-															}
- ]
-													}
-,
-													"id" : "obj-16",
-													"maxclass" : "playlist~",
-													"numinlets" : 1,
-													"numoutlets" : 5,
-													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 316.0, 181.0, 150.0, 30.0 ],
-													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"data" : 													{
-														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/Oneshot-01.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-28.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -12016,7 +12012,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 61.0, 181.0, 150.0, 30.0 ],
+													"patching_rect" : [ 316.0, 186.0, 150.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -12025,7 +12021,7 @@
 												"box" : 												{
 													"data" : 													{
 														"clips" : [ 															{
-																"filename" : "Macintosh HD:/Users/dansinger/Downloads/looperman-l-0111346-0033220-planetjazzbass-cavern.wav",
+																"filename" : "Macintosh HD:/Users/dansinger/Downloads/one shot selects/Movement-05.wav",
 																"filekind" : "audiofile",
 																"loop" : 0,
 																"content_state" : 																{
@@ -12050,13 +12046,39 @@
  ]
 													}
 ,
-													"id" : "obj-10",
+													"id" : "obj-11",
 													"maxclass" : "playlist~",
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-													"patching_rect" : [ 64.5, 470.0, 150.0, 30.0 ],
+													"patching_rect" : [ 64.5, 181.0, 150.0, 30.0 ],
 													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-5",
+													"maxclass" : "live.gain~",
+													"numinlets" : 2,
+													"numoutlets" : 5,
+													"outlettype" : [ "signal", "signal", "", "float", "list" ],
+													"parameter_enable" : 1,
+													"patching_rect" : [ 468.0, 126.5, 48.0, 136.0 ],
+													"saved_attribute_attributes" : 													{
+														"valueof" : 														{
+															"parameter_longname" : "live.gain~[28]",
+															"parameter_shortname" : "live.gain~[28]",
+															"parameter_type" : 0,
+															"parameter_mmin" : -70.0,
+															"parameter_mmax" : 6.0,
+															"parameter_initial" : [ 0.0 ],
+															"parameter_unitstyle" : 4
+														}
+
+													}
+,
+													"varname" : "live.gain~[8]"
 												}
 
 											}
@@ -12403,7 +12425,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 818.0, 432.0, 75.0, 22.0 ],
+													"patching_rect" : [ 828.0, 436.0, 75.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -15432,7 +15454,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 870.0, 44.0, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "119"
+													"text" : "-1"
 												}
 
 											}
@@ -15445,7 +15467,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 161.0, 54.0, 50.0, 22.0 ],
 													"style" : "",
-													"text" : "161"
+													"text" : "-1"
 												}
 
 											}
@@ -15675,15 +15697,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-109", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-10", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-100", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -15723,7 +15736,7 @@
 													"destination" : [ "obj-6", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-13", 0 ]
+													"source" : [ "obj-11", 0 ]
 												}
 
 											}
@@ -15732,7 +15745,25 @@
 													"destination" : [ "obj-23", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-16", 0 ]
+													"source" : [ "obj-13", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-69", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-15", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-52", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-17", 0 ]
 												}
 
 											}
@@ -15758,6 +15789,15 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-109", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-21", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -15767,29 +15807,29 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-107", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-25", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-5", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 315.0, 79.5, 477.5, 79.5 ],
+													"midpoints" : [ 315.0, 97.5, 477.5, 97.5 ],
 													"source" : [ "obj-27", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-52", 0 ],
+													"destination" : [ "obj-103", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-28", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-107", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-31", 0 ]
+													"source" : [ "obj-29", 0 ]
 												}
 
 											}
@@ -15798,7 +15838,7 @@
 													"destination" : [ "obj-101", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-33", 0 ]
+													"source" : [ "obj-31", 0 ]
 												}
 
 											}
@@ -15809,15 +15849,6 @@
 													"hidden" : 0,
 													"midpoints" : [ 435.5, 78.5, 477.5, 78.5 ],
 													"source" : [ "obj-35", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-103", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-36", 0 ]
 												}
 
 											}
@@ -15876,7 +15907,7 @@
 													"destination" : [ "obj-5", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 315.0, 78.0, 477.5, 78.0 ],
+													"midpoints" : [ 315.0, 101.0, 477.5, 101.0 ],
 													"source" : [ "obj-49", 0 ]
 												}
 
@@ -15919,7 +15950,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-13", 0 ],
+													"destination" : [ "obj-11", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-82", 0 ]
@@ -15937,7 +15968,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-16", 0 ],
+													"destination" : [ "obj-13", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-85", 0 ]
@@ -15955,7 +15986,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-22", 0 ],
+													"destination" : [ "obj-15", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-88", 0 ]
@@ -15973,7 +16004,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-28", 0 ],
+													"destination" : [ "obj-17", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-91", 0 ]
@@ -16000,7 +16031,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-33", 0 ],
+													"destination" : [ "obj-31", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-95", 0 ]
@@ -16018,7 +16049,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-36", 0 ],
+													"destination" : [ "obj-29", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-96", 0 ]
@@ -16036,19 +16067,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-31", 0 ],
+													"destination" : [ "obj-25", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-97", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-10", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-98", 0 ]
 												}
 
 											}
@@ -16058,6 +16080,15 @@
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-98", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-98", 0 ]
 												}
 
 											}
@@ -16087,7 +16118,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 335.0, 52.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "119"
+									"text" : "-1"
 								}
 
 							}
@@ -16100,7 +16131,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 140.5, 56.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "161"
+									"text" : "-1"
 								}
 
 							}
@@ -16452,10 +16483,9 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-7", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 459.0, 349.0 ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -16466,6 +16496,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -17650,7 +17689,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 84.0, 1230.0, 639.0 ],
+						"rect" : [ 342.0, 207.0, 1230.0, 639.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -17685,7 +17724,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 645.0, 406.0, 29.5, 22.0 ],
-									"presentation_rect" : [ 643.25, 407.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "3"
 								}
@@ -17699,7 +17737,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 600.25, 406.0, 29.5, 22.0 ],
-									"presentation_rect" : [ 597.25, 407.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "2"
 								}
@@ -17726,7 +17763,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 645.0, 373.0, 24.0, 24.0 ],
-									"presentation_rect" : [ 640.0, 382.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -17739,7 +17775,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 603.0, 373.0, 24.0, 24.0 ],
-									"presentation_rect" : [ 598.0, 383.0, 0.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -17778,7 +17813,7 @@
 									"outlettype" : [ "", "float" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 242.0, 306.0, 136.0, 144.0 ],
-									"saturation" : 0.54902
+									"saturation" : 0.988235
 								}
 
 							}
@@ -17791,7 +17826,7 @@
 									"outlettype" : [ "", "float" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 64.0, 506.0, 136.0, 144.0 ],
-									"saturation" : 0.54902
+									"saturation" : 0.898039
 								}
 
 							}
@@ -17804,7 +17839,7 @@
 									"outlettype" : [ "", "float" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 801.59259, 517.0, 136.0, 144.0 ],
-									"saturation" : 0.490196
+									"saturation" : 0.929412
 								}
 
 							}
@@ -17817,7 +17852,7 @@
 									"outlettype" : [ "", "float" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 430.59259, 521.0, 136.0, 144.0 ],
-									"saturation" : 0.411765
+									"saturation" : 0.988235
 								}
 
 							}
@@ -17957,7 +17992,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 973.0, 596.0, 178.5, 22.0 ],
 									"style" : "",
-									"text" : "0.393937 0.77342 0.337691 1."
+									"text" : "0.694118 0.992157 0.898039 1."
 								}
 
 							}
@@ -17977,14 +18012,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-43",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 590.59259, 605.5, 141.0, 35.0 ],
+									"patching_rect" : [ 590.59259, 605.5, 141.0, 22.0 ],
 									"style" : "",
-									"text" : "0.228758 0.54902 0.258063 1."
+									"text" : "0.972549 0.372549 1. 1."
 								}
 
 							}
@@ -18156,21 +18190,21 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 249.59259, 609.5, 149.0, 35.0 ],
 									"style" : "",
-									"text" : "0.145098 0.215686 0.498039 1."
+									"text" : "0.717647 0.988235 0.796078 1."
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-29",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 290.0, 249.5, 111.0, 49.0 ],
+									"patching_rect" : [ 290.0, 249.5, 111.0, 35.0 ],
 									"style" : "",
-									"text" : "0.145098 0.215686 0.498039 1."
+									"text" : "0.972549 0.372549 1. 1."
 								}
 
 							}
@@ -18255,7 +18289,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-25",
-									"items" : [ "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #3", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera" ],
+									"items" : [ "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #3", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "HD Pro Webcam C920 #2", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera", ",", "FaceTime HD Camera" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -19178,9 +19212,20 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -19433,12 +19478,14 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-4::obj-11::obj-20" : [ "live.gain~[30]", "live.gain~[30]", 0 ],
 			"obj-4::obj-11::obj-52" : [ "live.gain~[24]", "live.gain~[3]", 0 ],
 			"obj-4::obj-6::obj-52" : [ "live.gain~[16]", "live.gain~[3]", 0 ],
 			"obj-4::obj-74::obj-69" : [ "live.gain~[6]", "live.gain~[3]", 0 ],
 			"obj-4::obj-6::obj-69" : [ "live.gain~[17]", "live.gain~[3]", 0 ],
 			"obj-4::obj-6::obj-23" : [ "live.gain~[18]", "live.gain~[3]", 0 ],
 			"obj-4::obj-6::obj-6" : [ "live.gain~[19]", "live.gain~[3]", 0 ],
+			"obj-4::obj-7" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-4::obj-74::obj-5" : [ "live.gain~[28]", "live.gain~[28]", 0 ],
 			"obj-4::obj-6::obj-32" : [ "live.gain~[29]", "live.gain~[29]", 0 ],
 			"obj-4::obj-11::obj-103" : [ "live.gain~[21]", "live.gain~[3]", 0 ],
@@ -19463,20 +19510,50 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "looperman-l-0111346-0033220-planetjazzbass-cavern.wav",
-				"bootpath" : "~/Downloads",
+				"name" : "1.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Oneshot-01.wav",
-				"bootpath" : "~/Downloads",
+				"name" : "2.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Oneshot-14.wav",
-				"bootpath" : "~/Downloads",
+				"name" : "3.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "4.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "5.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "6.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "7.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "8.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/new melody samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -19488,12 +19565,6 @@
 			}
 , 			{
 				"name" : "Movement-37.wav",
-				"bootpath" : "~/Downloads",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Movement-48.wav",
 				"bootpath" : "~/Downloads",
 				"type" : "WAVE",
 				"implicit" : 1
@@ -19511,38 +19582,26 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Movement-05.wav",
-				"bootpath" : "~/Downloads/one shot selects",
+				"name" : "looperman-l-0203623-0021193-mhyst-ambient-swing.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/space drums",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Movement-28.wav",
-				"bootpath" : "~/Downloads/one shot selects",
+				"name" : "looperman-l-1588764-0102038-amirmofrat-darkest-night-drum-loop-1.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/space drums",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Movement-42.wav",
-				"bootpath" : "~/Downloads/one shot selects",
+				"name" : "looperman-l-0549180-0050088-haydenbutcher-shivering-snare.wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/space drums",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Oneshot-04.wav",
-				"bootpath" : "~/Downloads/one shot selects",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Oneshot-16.wav",
-				"bootpath" : "~/Downloads/one shot selects",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Oneshot-18.wav",
-				"bootpath" : "~/Downloads/one shot selects",
+				"name" : "looperman-l-0291301-0097251-djreaperspirit-silent-hill-forest (1).wav",
+				"bootpath" : "~/Documents/DM Things/sound-happening/samples/space drums",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
