@@ -1,14 +1,15 @@
 class Spheres {
-  float radius;
+  float radius = 10;
   float Xpos;
   float Ypos;
   float Zpos;
+  float realX;
+  float realY;
   
-  Spheres(float r, float x, float y, float z) {
-    Xpos = x;
-    Ypos = y;
-    Zpos = z;
-    radius = r;
+  int id;
+  
+  Spheres(int ballId) {
+    id = ballId;
   }
   
   void update() {
@@ -17,18 +18,32 @@ class Spheres {
   }
   
   void updatePosition() {
-    Xpos = ball1x;
-    Ypos = ball1y;
-    Zpos = ball1z;
+    if(id == 1) {
+      Xpos = ball1x;
+      Ypos = ball1y;
+      Zpos = ball1z;
+    } else if(id == 2) {
+      Xpos = ball2x;
+      Ypos = ball2y;
+      Zpos = ball2z;
+    } else if(id == 3) {
+      Xpos = ball3x;
+      Ypos = ball3y;
+      Zpos = ball3z;
+    }
   }
   
   
   void render() {
+    realX = map(ball1x, 320, 0, 0, 500);
+    realY = map(ball1y, 240, 0, 0 ,500);
+    
     pushMatrix();
-    translate(Xpos,Ypos, Zpos);
+    translate(realX,250, realY);
     fill(Ypos, Xpos, 160);
     sphere(radius);
     popMatrix();
+    println(realX);
   }
   
 }
